@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCOMENDAS</title>
+    <meta name="description" content="Faça sua encomenda de bolos personalizados, fresquinhos e deliciosos. Escolha o sabor, o formato e a decoração do seu bolo para qualquer ocasião. Pedidos rápidos e entrega garantida!">
+    <meta name="keywords" content="encomenda de bolos, bolos personalizados, bolos sob encomenda, bolos frescos, bolos para festas, bolos de aniversário, bolos para casamento, bolos gourmet, bolos para eventos, pedido de bolo online, entrega de bolos, bolos feitos sob encomenda">
+    <link rel="icon" href="../../assets/images/bolo-de-coracao.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/form.css">
+</head>
+<body>
+<div id="somaTotal" class="soma-total">
+        <span>Preço original: €<span id="precoOriginal">0,00</span></span><br>
+        <span>Desconto: €<span id="desconto">0,00</span></span><br>
+        <span>Preço final: €<span id="total">0,00</span></span>
+        <p><strong>Data de Entrega:</strong> <span id="dataEntrega"></span></p>
+        <p style="text-align: justify;">*(prazos de encomendas maiores que 15 dias ganham 5% de desconto. Prazo para mais de 30 dias ganham 10% de desconto)</p>
+</div>
+<div>
+<a href="../../index.html" class="botao-voltar">Página Inicial</a>
+</div>
+<div id="container">
+    <h1 id="h11">-Encomendas-</h1>
+    <h2>Dados</h2>
+    <form action="/enviar" method="post" id="formulario" onsubmit="return validar()">
+        <!--Nome-->
+        <label for="nome" class="text-label">Nome:</label>
+        <input type="text" id="nome" class="input-dados" name="nome" placeholder="Seu nome completo" maxlength="50" size="40">
+        <br><br>
+        <!--Apelido-->
+        <label for="nome" class="text-label">Apelido:</label>
+        <input type="text" id="apelido" name="apelido" placeholder="Seu Apelido" class="input-dados" maxlength="50" size="40">
+        <br><br>
+            <!-- Email -->
+        <label for="email" class="text-label">Email:</label>
+
+        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com" class="input-dados"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Insira um e-mail válido, como exemplo@dominio.com">
+        <br><br>
+        <!-- Telefone -->
+        <label for="telefone" class="text-label">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" class="input-dados" placeholder="xxxx-xxx" maxlength="9">
+        <br><br>
+        <!-- Pedido de orçamento -->
+        <h2>Pedido de orçamento</h2>
+        <div id="area-pedido">
+            <label for="options" class="text-label" id="label-tipo-bolo">Tipo de Bolo:</label>
+            <select name="options" id="options">
+            <option value="default" selected>Selecione o tipo de bolo</option>
+            <option value="bolo-numeral">Bolo Numeral</option>
+            <option value="bolo-alfabeto">Bolo Alfabeto</option>
+            <option value="bolo-personalizado">Bolo Personalizado</option>
+            <option value="bolo-casamento">Bolo de Casamento</option>
+            </select>
+            <label for="prazo"  class="text-label" >Data da entrega:</label>
+            <input type="date" id="prazo">
+        <br><br>
+    </div>
+<div id="image-display">
+</div>
+
+<h4>Monte seu Bolo</h4>
+<h5>Recheio:</h5>
+<p>(*Escolha até dois recheios)</p> 
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="chocolate-leite" value="chocolate-leite">
+    <span>Chocolate ao leite</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="chocolate-70" value="chocolate-70">
+    <span>Chocolate 70% CACAU</span>
+    <span class="preco"> 17</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="frutos-Vermelhos" value="frutos-Vermelhos">
+    <span>Frutos Vermelhos</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="nozes" value="nozes">
+    <span>Nozes</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="doce-de-leite" value="doce-de-leite">
+    <span>Doce De Leite</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="chocolate-branco" value="chocolate-branco">
+    <span>Chocolate Branco</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="beijinho" value="beijinho">
+    <span>Beijinho</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="recheio[]" id="cream-cheese" value="cream-cheese">
+    <span>Cream Cheese</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<h5>Massa:</h5>
+<p>(*Escolha 1 massa)</p>
+<div class="item-option">
+    <input type="checkbox" name="massa[]" id="massa-chocolate" value="massa-chocolate">
+    <span>Chocolate</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="massa[]" id="massa-branca" value="massa-branca">
+    <span>Branca</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="massa[]" id="massa-branca-baunilha" value="massa-branca-baunilha">
+    <span>Branca Baunilha</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="massa[]" id="massa-red" value="massa-red">
+    <span>Red Velvet</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<h5>Cobertura:</h5>
+<p>(*Escolha 1 cobertura)</p>
+<div class="item-option">
+    <input type="checkbox" name="cobertura[]" id="buttercream" value="buttercream">
+    <span>Buttercream</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="cobertura[]" id="pasta-americana" value="pasta-americana">
+    <span>Pasta Americana</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="cobertura[]" id="chantili" value="chantili">
+    <span>Chantili</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="cobertura[]" id="chocolate-preto" value="chocolate-preto">
+    <span>Chocolate Preto</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="cobertura[]" id="cobertura-chocolate-branco" value="cobertura-chocolate-branco">
+    <span>Chocolate Branco</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="cobertura[]" id="creme-nozes" value="creme-nozes">
+    <span>Creme Nozes</span>
+    <span class="preco"> 14</span>
+</div>
+<br>
+
+<div class="item-option">
+    <input type="checkbox" name="cobertura[]" id="naked-cake" value="naked-cake">
+    <span>Naked Cake</span>
+</div>
+<br>
+    <p>Informações adicionais:</p>
+    <p>*(Idade, letra ou frase para a confecção do bolo.)</p>
+    <textarea name="preferencias" id="idpreferencias"></textarea>
+    <br><br>
+    <div>
+        <h5>Orçamento Estimado</h5>
+        <p>(*Valor sujeito a alterações)</p>
+        <div></div>
+    </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+</form>
+    </div>
+    <script src="../../assets/js/js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/form.js"></script>
+</body>
+</html>

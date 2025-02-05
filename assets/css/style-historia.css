@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playwrite+SK:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cor1:#D14D72;
+    --cor2:#FFABAB;
+    --cor3:#FCC8D1;
+    --cor4:#FEF2F4;
+    --cor5:#f8f1f2;
+    --cor6:rgb(105, 47, 5);
+    --font:"Josefin Slab", serif;
+} 
+body {
+    font-family:var(--font);
+    color: #4a3c31; 
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f7f3e9;
+}
+.main-container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #7e624979; 
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.story-section {
+    margin-bottom: 50px;
+}
+
+.story-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2e2d23;
+}
+
+.story-section p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #4a3c31;
+}
+
+.story-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    display: block;
+    border-radius: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #643815; 
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e76f51;
+}
+
+footer {
+    background-color: #8e735b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .story-section h2 {
+        font-size: 1.8em;
+    }
+
+    .story-section p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

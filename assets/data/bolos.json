@@ -1,0 +1,80 @@
+{
+    "bolos": {
+    "grande": [
+        {
+        "nome": "Bolo de Chocolate 70% cacau",
+        "descricao": "Nosso Bolo de Cacau 70% é uma verdadeira indulgência para os amantes de chocolate. Feito com o mais puro cacau, este bolo oferece uma experiência única com seu sabor intenso e delicadamente amargo. A textura macia e úmida combina perfeitamente com a riqueza do cacau de alta qualidade, criando um contraste perfeito para quem busca um doce sofisticado, porém com um toque clássico e marcante."
+        },
+        {
+        "nome": "Bolo de Doce de Leite",
+        "descricao": "O nosso Bolo de Doce de Leite é a combinação perfeita de maciez e sabor delicado. Com camadas fofinhas e um recheio cremoso de doce de leite, esse bolo conquista a todos com sua doçura equilibrada e textura suave. Ideal para quem aprecia um doce clássico, ele é perfeito para celebrar momentos especiais ou para um prazer a qualquer hora do dia."
+        },
+        {
+            "nome":"Bolo Floresta Negra",
+            "descricao":"O Bolo Floresta Negra é uma deliciosa combinação de camadas de bolo de chocolate, creme de chantilly e cerejas suculentas. Com seu sabor intenso e textura irresistível, é a escolha perfeita para quem ama o contraste entre o chocolate e a leveza do creme. Ideal para ocasiões especiais ou para qualquer momento que pede um doce refinado e cheio de sabor."
+        },
+        {
+            "nome":"Bolo de Merengue",
+            "descricao":"O Bolo Merengue é uma combinação delicada de camadas de bolo suave e merengue crocante, criando uma experiência única de textura e sabor. Recheado com um toque de frutas frescas ou cremes, ele oferece uma explosão de doçura leve e refrescante. Perfeito para quem busca um doce leve e sofisticado para qualquer ocasião."
+        },
+        {
+            "nome":"Bolo de Nozes",
+            "descricao":"O Bolo de Nozes é uma verdadeira delícia para os amantes de sabores sofisticados. Com uma massa fofa e rica, esse bolo é recheado com pedaços crocantes de nozes, proporcionando uma combinação perfeita de textura e sabor. Ideal para ocasiões especiais, ele traz um toque de elegância e aconchego a qualquer momento."
+        },
+        {
+            "nome":"Bolo Red Velvet",
+            "descricao":"O Bolo Red Velvet é uma verdadeira obra-prima da confeitaria, com sua vibrante cor vermelha e sabor delicadamente aveludado. Sua massa macia, levemente amanteigada, é combinada com um creme de queijo suave e cremoso, criando uma experiência única a cada pedaço. Perfeito para impressionar em qualquer ocasião, é uma escolha sofisticada e irresistível."
+        }
+    ],
+    "mini": [
+        {
+        "nome": "Mini Chocolate Branco",
+        "descricao": "O Mini Bolo de Chocolate Branco é uma verdadeira tentação para os amantes de chocolate. Com uma massa fofinha e leve, envolta em um delicioso ganache de chocolate branco, ele oferece um sabor suave e cremoso, perfeito para momentos de indulgência. Ideal para quem busca um doce sofisticado e delicado em porções individuais"
+        },
+        {
+            "nome":"Mini Doce de Leite",
+            "descricao":"O Mini Bolo de Doce de Leite é uma delícia que combina a suavidade da massa fofinha com o sabor envolvente do doce de leite. Cada fatia oferece uma experiência doce e cremosa, perfeita para quem adora sobremesas tradicionais com um toque especial. Ideal para agradar a todos os paladares em porções individuais."
+        },
+        {
+            "nome":"Mini Floresta Negra",
+            "descricao":"O Mini Bolo Floresta Negra traz o equilíbrio perfeito entre a massa de chocolate úmida, o creme suave e as cerejas frescas. Com camadas delicadas de chantilly e a combinação de sabores intensos, este mini bolo é uma verdadeira explosão de sabor, ideal para quem busca uma sobremesa refinada e deliciosa."
+        },
+        {
+            "nome":"Mini Red Velvet",
+            "descricao":"O Mini Bolo Red Velvet é a versão encantadora e prática do clássico bolo Red Velvet. Com sua cor vibrante e massa macia, ele é delicadamente coberto com um cremoso creme de queijo, oferecendo uma combinação perfeita de sabor e suavidade em cada mordida. Ideal para eventos especiais ou para um toque de sofisticação em momentos mais íntimos."
+        }
+    ],
+    "especial": [
+        {
+        "nome": "Bolo Numeral",
+        "descricao": "Perfeito para aniversários e eventos especiais, nosso bolo em formato de número é delicioso e personalizável. Com camadas fofinhas e uma cobertura irresistível, ele vai tornar sua celebração ainda mais marcante!"
+        },
+        {
+            "nome":"Bolo Alfabeto",
+            "descricao":"Delicie-se com nossos bolos em formato de letras do alfabeto, perfeitos para personalizar celebrações especiais! Escolha uma letra ou forme palavras para criar momentos únicos e cheios de sabor."
+        },
+        {
+            "nome":"Bolo Personalizado Frase",
+            "descricao":"Transforme seus sentimentos em sabor com nossos bolos personalizados com frases. Escolha o sabor, o design e a mensagem, e crie um bolo único para tornar sua celebração ainda mais especial!"
+        },
+        {
+            "nome":"Bolo de Casamento",
+            "descricao":"Celebre o amor com nossos bolos de casamento exclusivos. Combinando design impecável e sabores irresistíveis, criamos a peça central perfeita para o seu grande dia!"
+        }
+    ],
+    "extra": [
+        {
+        "nome": "Velas",
+        "descricao": " Velas Tradicionais. Velas com Números. Velas Temáticas ou Personalizadas."
+        },
+        {
+            "nome":"Cartões",
+            "descricao":"Cartões tradicionais, com mensagens de feliz aniversário e designs simples ou florais. Eles podem ser feitos com papel de alta qualidade e ter detalhes como bordas douradas ou prateadas."
+        },
+        {
+            "nome":"Topo de Bolo",
+            "descricao":"Um dos topos de bolo mais populares, geralmente feito de acrílico ou madeira, com o nome do aniversariante. Eles podem ser feitos de diversos estilos, como letras cursivas ou fontes modernas."
+        }
+    ]
+    }
+}

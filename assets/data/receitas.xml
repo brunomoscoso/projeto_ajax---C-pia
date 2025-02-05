@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+        <title>Receitas</title>
+        <link>receitas</link>
+        <description>Receitas deliciosas para o seu dia.</description>
+        <item>
+            <title>Bolo de Cenoura</title>
+            <link>../pages/receitas/receita_bolo_cenoura.html</link>
+            <description>Bolo de cenoura fofinho com cobertura de chocolate...</description>
+        </item>
+        <item>
+            <title>Torta de Limão</title>
+            <link>../pages/receitas/receita_torta_limao.html</link>
+            <description>Uma torta refrescante e cremosa de limão...</description>
+        </item>
+        <item>
+            <title>Cookie</title>
+            <link>../pages/receitas/receita_cookie.html</link>
+            <description>Um cookie crocante por fora e macio por dentro, com chocolate...</description>
+        </item>
+        <item>
+            <title>Brigadeiro</title>
+            <link>../pages/receitas/receita_brigadeiro.html</link>
+            <description>Um cookie crocante por fora e macio por dentro, com chocolate...</description>
+        </item>
+</channel>
+</rss>
+    

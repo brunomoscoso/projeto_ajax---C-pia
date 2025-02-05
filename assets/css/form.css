@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playwrite+SK:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --cor1:#D14D72;
+    --cor2:#FFABAB;
+    --cor3:#FCC8D1;
+    --cor4:#FEF2F4;
+    --cor5:#f8f1f2;
+    --cor6:rgb(105, 47, 5);
+    --font:"Josefin Slab", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../../assets/images/papel-de-parede-confeitaria-doces-padaria-bolos-ssca-048-adesivo-de-parede-vinilico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    margin: 15px;
+    padding: 10px;
+    text-align: start;
+    background-color:rgba(97, 8, 8, 0.925);
+    border: 1px solid #ccc;
+    width: 50%;
+}
+h1{
+    color:white;
+    font-family: var(--font);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(255, 228, 196, 0.521);
+    border: 1px solid #cccccc57;
+}
+h2,h3, h4, h5{
+    color: white;
+    font-family: var(--font);
+    text-align: center;
+    margin-top: 10px;
+    background-color: #ff87a938;
+}
+h5{
+    font-size: 1.5em;
+}
+p{
+    font-family: var(--font);
+    color:white;
+    font-size: 1.1em;
+}
+span{
+    padding: 10px;
+    color: white;
+    font-family: var(--font);
+    font-size: 1.4em;
+}
+.text-label{
+    font-family: var(--font);
+    font-size: 1.2em;
+    font-weight: bold;
+    color:white;
+}
+#options{
+    font-family: var(--font);
+    font-size: 1.2em;
+}
+.input-dados{
+    font-family: var(--font);
+    font-size: 1.2em;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+#area-pedido{
+    text-align: center;
+}
+#idpreferencias{
+    border-color: rgba(126, 24, 24, 0.26);
+    border-radius: 10px;
+    width: 80%;
+}
+button{
+    color: white;
+    font-family: var(--font);
+    font-size: 1.2em;
+    border: none;
+    background-color:brown;
+    border-radius: 20px;
+    padding: 5px;
+    width: 15%;
+    margin: 6px;
+    box-shadow: 10px 5px 5px rgba(71, 70, 70, 0.082);
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 5px;
+}
+#imagem{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    gap: 7px;
+    opacity: 0.9;
+}
+#image-display img {
+    display: flex;
+    margin: auto;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.item-option{
+    display: flex;
+    align-items: center;
+}
+.preco{
+    font-size: 15px;
+}
+.preco::before{
+    content: '----- € ';
+}
+.soma-total {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: var(--font);
+    background-color:  rgba(92, 8, 8, 0.938);
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 20%;
+}
+.botao-voltar{
+    text-align: center;
+    position: fixed;
+    top: 300px;
+    left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: var(--font);
+    background-color:  rgba(92, 8, 8, 0.938);
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 20%;
+    color: white;
+    text-decoration: none;
+}
+.botao-voltar:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    background-color: rgb(165, 10, 10);
+}
+.legenda-bolo{
+    text-align: center;
+    margin-top: 10px;
+}
